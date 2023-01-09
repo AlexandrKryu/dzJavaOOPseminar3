@@ -166,7 +166,8 @@ class XmlDocument extends WorkerDocument {
 
 	@Override
 	public void saveAs() {
-		System.out.printf("Типа вывожу в XML %d %d %s\n", worker.getAge(), worker.getSalary(), worker.getName());
+		System.out.printf("Типа вывожу в XML Работник: %s Возраст: %d З/п: %d\n",
+		 worker.getName(), worker.getAge(), worker.getSalary());
 	}
 }
 
@@ -178,7 +179,8 @@ class MdDocument extends WorkerDocument {
 
 	@Override
 	public void saveAs() {
-		System.out.printf("Типа вывожу в MD %d %d %s\n", worker.getAge(), worker.getSalary(), worker.getName());
+		System.out.printf("Типа вывожу в MD Работник: %s Возраст: %d З/п: %d\n",
+		 worker.getName(), worker.getAge(), worker.getSalary());
 	}
 }
 
@@ -189,6 +191,7 @@ class JsonDocument extends WorkerDocument {
 
 	@Override
 	public void saveAs() {
-		System.out.printf("Типа вывожу в JSON %d %d %s\n", worker.getAge(), worker.getSalary(), worker.getName());
+		System.out.printf("Типа вывожу в JSON Работник: %s Возраст: %d З/п: %d\n",
+		 worker.getName(), worker.getAge(), worker.getSalary());
 	}
 }
